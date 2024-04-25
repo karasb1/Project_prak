@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <Windows.h>
 using namespace std;
 
@@ -24,6 +25,6 @@ int main()
 	cin >> value3;
 	SetConsoleTextAttribute(hConsole, 0x07);
 	cout << "ќб'Їм: ";
-	cout << value1 * value2 * value3 << " куб.см." << endl;
+	cout << setprecision(6) << value1 * value2 * value3 << " куб.см." << endl;
 	return 0;
 }
